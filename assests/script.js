@@ -1,7 +1,7 @@
 // Display today's date
 const todayDate = dayjs().format('MM/DD/YYYY');
-myDate = document.createTextNode(todayDate);
-document.body.appendChild( myDate ); 
+const dateEl = document.getElementById("currentDate");
+dateEl.textContent = todayDate
 
 // Global Variable used to store the quotes 
 // fetched from the API

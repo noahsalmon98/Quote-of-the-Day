@@ -25,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .quote {
