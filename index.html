@@ -18,17 +18,19 @@
 
     <!-- Loading Open Sans Font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!--Add Days.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
         integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Quote of the Day!</title>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <!--Title-->  
+        <title>Quote of the Day!</title>
 </head>
 
 <body id="body">
     <div>
         <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
             <h1>Quote of the Day</h1>
-            <h2>A simple Quote can motivate your Day!</h2>
+            <h2>A Quote can Motivate or Demotivate your Day!</h2>
             <p id="currentDate" class="lead"></p>
             <!-- Quote Box -->
             <div class="block text-center">
@@ -55,32 +57,38 @@
 
                     <!-- New Quote Button -->
                     <a class="new-quote btn btn-default" onclick="newQuote()">New Quote</a>
+                    <!--Add div element with Google translate Id-->
+                    <div id="google_translate_element"></div>
                 </div>
             </div>
     </div>
 
     <!-- Back Part of the Quote Box -->
-    <div class="quote-box block__main block__back">
+    <div class="block text-center">
+        <div class="quote-box block__main block__back">
 
-        <!-- Quote to be Displayed Here -->
-        <span class="quote">
+            <!-- Quote to be Displayed Here -->
+            <span class="quote">
 
-            <!-- Hyphen is Displayed  -->
-            <i class="fas fa-2x fa-quote-left"></i>
-            <!-- Quote Text -->
-            <span class="text">
-                Quote To be Displayed Here
+                <!-- Hyphen is Displayed  -->
+                <i class="fas fa-2x fa-quote-left"></i>
+                <!-- Quote Text -->
+                <span class="text">
+                    Quote To be Displayed Here
+                </span>
+                <!-- Hyphen is Displayed  -->
+                <i class="fas fa-2x fa-quote-right"></i>
             </span>
-            <!-- Hyphen is Displayed  -->
-            <i class="fas fa-2x fa-quote-right"></i>
-        </span>
 
-        <!-- Author to be Displayed Here -->
-        <div class="author">
-            Author to be Displayed Here
+            <!-- Author to be Displayed Here -->
+            <div class="author">
+                Author to be Displayed Here
+            </div>
+            <!-- New Quote Button -->
+            <a class="new-quote btn btn-default " onclick="newQuote()">New Quote</a>
+            <!--Add div element with Google translate Id-->
+            <div id="google_translate_element"></div>
         </div>
-        <!-- New Quote Button -->
-        <a class="new-quote btn btn-default " onclick="newQuote()">New Quote</a>
     </div>
 
     <!-- Linking Your JavaScript File -->
