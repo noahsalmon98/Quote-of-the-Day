@@ -18,6 +18,9 @@
 
     <!-- Loading Open Sans Font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!--Add Google-translate link-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="./assests/google-translate.css" rel="stylesheet">
     <!--Add Days.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
         integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
@@ -27,6 +30,18 @@
 </head>
 
 <body id="body">
+    <div class="ct-topbar">
+        <div class="container">
+            <ul class="list-unstyled list-inline ct-topbar__list">
+                <li class="ct-language">Back to English <i class="fa fa-arrow-down"></i>
+                    <ul class="list-unstyled ct-language__dropdown">
+                        <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img
+                         src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div>
         <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
             <h1>Quote of the Day</h1>
@@ -93,6 +108,10 @@
 
     <!-- Linking Your JavaScript File -->
     <script src="./assests/script.js"></script>
+    <script src="./assests/google-translate.js"></script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </body>
 
 </html>
