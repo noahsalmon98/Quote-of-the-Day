@@ -26,6 +26,7 @@ body {
     background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .quote {
@@ -60,6 +61,7 @@ body {
     background-image: linear-gradient(to right bottom, #28313B, #485461);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 
@@ -74,12 +76,13 @@ p {
 .block {
     perspective: 150rem;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 27%;
 }
 
 .block__main {
     min-width: 45vw;
+    max-width: 50vw;
     position: absolute;
     transition: all .8s ease;
     backface-visibility: hidden;
@@ -98,4 +101,6 @@ p {
 
 .rotateB {
     transform: rotateY(0deg);
+    margin-top: 7%;
+    margin-left: 20%;
 }
