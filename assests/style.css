@@ -104,3 +104,56 @@ p {
     margin-top: 7%;
     margin-left: 20%;
 }
+/*second box styling*/
+.blockT {
+    perspective: 150rem;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    margin-top:25%
+}
+
+.block__quote {
+    min-width: 45vw;
+    max-width: 50vw;
+    position: absolute;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: .5rem;
+    background-image: linear-gradient(to right bottom, #F6F0EA, #F1DFD1);
+}
+
+.tranAuthor {
+    margin: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: linear-gradient(to right bottom, #28313B, #485461);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tranQuote {
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.tranText {
+    font-size: 30px;
+    padding-left: 10px;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.quote-box2 {
+    padding: 3rem;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+}

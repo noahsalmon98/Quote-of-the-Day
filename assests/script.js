@@ -10,10 +10,11 @@ let front = true;
 
 // Getting the front and the back author boxes
 const authors = document.querySelectorAll(".author");
+const authors2 = document.querySelectorAll(".tranAuthor");
 
 // Getting the front and the back texts
 const texts = document.querySelectorAll(".text");
-
+const texts2 = document.querySelectorAll(".tranText");
 // Getting the body
 const body = document.getElementById("body");
 
@@ -25,13 +26,17 @@ const blockBack = document.querySelector(".block__back");
 
 const authorFront = authors[0];
 const authorBack = authors[1];
+const authorFront2 = authors[0];
+const authorBack2 = authors[1];
 
 const textFront = texts[0];
 const textBack = texts[1];
+const textFront2 = texts[0];
+const textBack2 = texts[1];
 
 const buttonFront = button[0];
 const buttonBack = button[1];
-
+const trans = document.getElementById("google_translate_element");
 
 // An arrow function used to get a quote randomly
 const displayQuote = () => {
@@ -92,4 +97,10 @@ function newQuote() {
 
     // Displaying a new quote when the webpage loads
     displayQuote();
+}
+function transl() {
+   const trans = textFront[0].text
+   
+    
+
 }
