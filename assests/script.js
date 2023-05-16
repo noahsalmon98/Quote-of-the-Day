@@ -100,12 +100,11 @@ function newQuote() {
     // Displaying a new quote when the webpage loads
     displayQuote();
 }
-function transl() {
-   const trans = textFront[0].text
-   
-    
 
-}
+
+
+const translateEL= document.getElementById("texttotranslate").children[0].children[1].innerText
+console.log(translateEL)
 const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2/detect';
 const options = {
     method: 'POST',
@@ -120,11 +119,13 @@ const options = {
     })
 };
 
-try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
-} catch (error) {
-    console.error(error);
-}
 
+async function test() {
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    };
+}

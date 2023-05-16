@@ -20,4 +20,4 @@ jQuery('.lang-select').click(function () {
 
     //alert(jQuery(this).attr('href'));
     window.location = jQuery(this).attr('href');
-    location.reload();
+    location.reload()});
