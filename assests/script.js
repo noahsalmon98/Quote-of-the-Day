@@ -1,25 +1,3 @@
-const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2/detect';
-const options = {
-    method: 'POST',
-    headers: {
-        'content-type': 'application/x-www-form-urlencoded',
-        'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': 'da30ef9e92msh9064eb8ecf5ca2ep1640fdjsn765e66d2173f',
-        'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-    },
-    body: new URLSearchParams({
-        q: 'English is hard, but detectably so'
-    })
-};
-
-try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
-} catch (error) {
-    console.error(error);
-}
-
 
 
 // Display today's date
@@ -122,9 +100,32 @@ function newQuote() {
     // Displaying a new quote when the webpage loads
     displayQuote();
 }
-function transl() {
-   const trans = textFront[0].text
-   
-    
 
+
+
+const translateEL= document.getElementById("texttotranslate").children[0].children[1].innerText
+console.log(translateEL)
+const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2/detect';
+const options = {
+    method: 'POST',
+    headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'Accept-Encoding': 'application/gzip',
+        'X-RapidAPI-Key': 'da30ef9e92msh9064eb8ecf5ca2ep1640fdjsn765e66d2173f',
+        'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+    },
+    body: new URLSearchParams({
+        q: 'English is hard, but detectably so'
+    })
+};
+
+
+async function test() {
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    };
 }
