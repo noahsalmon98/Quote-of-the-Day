@@ -37,8 +37,7 @@ const authorBack2 = authors[1];
 
 const textFront = texts[0];
 const textBack = texts[1];
-// const textFront2 = texts[0];
-// const textBack2 = texts[1];
+
 const buttonFront = button[0];
 const buttonBack = button[1];
 const trans = document.getElementById("google_translate_element");
@@ -67,9 +66,8 @@ const displayQuote = () => {
         // Changing the front if back-side is displayed
         textFront.innerHTML = quote;
         authorFront.innerHTML = author;
-      
-    console.log(authorFront2);
-    } else {
+
+        } else {
         // Changing the back if front-side is displayed
         textBack.innerHTML = quote;
         authorBack.innerHTML = author;
@@ -78,10 +76,6 @@ const displayQuote = () => {
     front = !front;
 
 }
-// help.on('click', function(){
-//     hello
-// });
-
 
 // Fetching the quotes from the type.fit API using promises
 fetch("https://type.fit/api/quotes")
@@ -112,8 +106,7 @@ function newQuote() {
 
 
 
-const translateEL = document.getElementById("texttotranslate").children[0].children[1].innerText
-console.log(translateEL)
+
 const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2/detect';
 const options = {
     method: 'POST',
@@ -123,9 +116,7 @@ const options = {
         'X-RapidAPI-Key': 'da30ef9e92msh9064eb8ecf5ca2ep1640fdjsn765e66d2173f',
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
     },
-    // body: new URLSearchParams({
-    //     q: 'English is hard, but detectably so'
-    // })
+
 };
 
 
@@ -133,18 +124,14 @@ async function test() {
     try {
         const response = await fetch(url, options);
         const result = await response.text();
-        console.log(result);
-    } catch (error) {
+        } catch (error) {
         console.error(error);
     };
 }
-// function hello() {
-//     new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'quote_block');
-// };
+
 function transf() {
     save[0].addEventListener('click', function () {
         quotetosave = texts[0].innerText + "-" + authors[0].innerText;
-        console.log(quotetosave);
         localStorage.setItem('Quote', JSON.stringify(quotetosave));
     });
 }
@@ -153,7 +140,6 @@ transf()
 function transf2() {
     save[0].addEventListener('click', function () {
         quoteto = texts[1].innerText + "-" + authors[1].innerText;
-        console.log(quoteto);
         localStorage.setItem('Quote', JSON.stringify(quoteto));
     });
 }
@@ -165,7 +151,6 @@ rerun[0].addEventListener('click', function () {
     var quoteText = saveQuote.split("-")[0]
     var authorText = saveQuote.split("-")[1]
     texts[0].textContent = quoteText;
-    authors[0].textContent = authorText
-    // let wierd = texts.replace(saveQuote)
-    console.log(saveQuote);
+    authors[0].textContent = authorText;
+
 });
