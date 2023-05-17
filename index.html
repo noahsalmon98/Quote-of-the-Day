@@ -15,7 +15,7 @@
 
     <!-- Linking Your CSS Files -->
     <link rel="stylesheet" href="./assests/style.css" />
-    <link href="./assests/google-translate.css" rel="stylesheet">
+    <!-- <link href="./assests/google-translate.css" rel="stylesheet"> -->
 
     <!-- Loading Roboto Font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -37,23 +37,23 @@
     <div class="ct-topbar">
         <div class="container">
             <ul class="list-unstyled list-inline ct-topbar__list">
-                <li class="ct-language">Languages <i class="fa fa-arrow-down"></i>
-                    <ul class="list-unstyled ct-language__dropdown">
+                <li class="ct-language"><i class="fa fa-arrow-down">Languages</i>
+                    <!-- <ul class="list-unstyled ct-language__dropdown">
                         <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img
-                                    src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a>
+                                    src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a> -->
                         </li>
                         <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"><img
                                     src="https://www.solodev.com/assets/google-translate/flag-mexico.png"
                                     alt="MEXICO"></a></li>
-                        <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img
+                      <!--  <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img
                                     src="https://www.solodev.com/assets/google-translate/flag-france.png"
                                     alt="FRANCE"></a></li>
                         <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img
                                     src="https://www.solodev.com/assets/google-translate/flag-china.png"
-                                    alt="CHINA"></a></li>
-                        <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img
+                                    alt="CHINA"></a></li> -->
+                        <!-- <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img
                                     src="https://www.solodev.com/assets/google-translate/flag-japan.png"
-                                    alt="JAPAN"></a></li>
+                                    alt="JAPAN"></a></li> -->
                     </ul>
                 </li>
             </ul>
@@ -67,7 +67,7 @@
 
 
         <!-- Quote Box -->
-        <div class="notranslate">
+        <div>
             <div class="block text-center">
                 <!--block-->
                 <!-- Front part of the Quote Box -->
@@ -86,18 +86,18 @@
                     </span>
 
                     <!-- Author to be Displayed Here -->
-                    <div class="author">
+                    <div class="notranslate author">
                         Author to be Displayed Here
                     </div>
 
                     <!-- New Quote Button -->
-                    <a class="new-quote btn btn-default" onclick="newQuote()">New Quote</a>
+                    <a class="notranslate new-quote btn btn-default" onclick="newQuote()">New Quote</a>
                 </div>
             </div>
         </div>
 
         <!-- Back Part of the Quote Box -->
-        <div class="notranslate">
+        <div>
             <div class="block text-center">
                 <div class="quote-box block__main block__back">
 
@@ -115,79 +115,32 @@
                     </span>
 
                     <!-- Author to be Displayed Here -->
-                    <div class="author">
+                    <div class="notranslate author">
                         Author to be Displayed Here
                     </div>
                     <!-- New Quote Button -->
-                    <a class="new-quote btn btn-default " onclick="newQuote()">New Quote</a>
+                    <a class="notranslate new-quote btn btn-default" onclick="newQuote()">New Quote</a>
 
                 </div>
             </div>
         </div>
-
         <button class="notranslate save">Save Favorite Quote</button>
         <button class="notranslate rerun">Return to your Favorite Quote</button>
 
-        <!-- Translation Box -->
-        <div class="blockT text-center">
-
-            <!-- Front part of the Translation Box -->
-            <div class="quote-box2 block__quote block__front2" id="texttotranslate">
-
-                <!-- Translation to be Displayed Here -->
-                <span class="tranQuote">
-                    <!-- Hyphen is Displayed  -->
-                    <i class="fas fa-2x fa-quote-left"></i>
-                    <!-- Translation Text -->
-                    <span class="tranText">
-                        Quote To be Displayed Here
-                    </span>
-                    <!-- Hyphen is Displayed  -->
-                    <i class="fas fa-2x fa-quote-right"></i>
-                </span>
-
-                <!-- Author to be Displayed Here -->
-                <div class="tranAuthor">
-                    Author to be Displayed Here
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Back Part of the Translation Box -->
-        <div class="blockT text-center">
-            <div class="quote-box2 block__quote block__back">
-
-                <!-- Translation to be Displayed Here -->
-                <span class="tranQuote">
-
-                    <!-- Hyphen is Displayed  -->
-                    <i class="fas fa-2x fa-quote-left"></i>
-                    <!-- Translation Text -->
-                    <span class="tranText">
-                        Quote To be Displayed Here
-                    </span>
-                    <!-- Hyphen is Displayed  -->
-                    <i class="fas fa-2x fa-quote-right"></i>
-                </span>
-
-                <!-- Author to be Displayed Here -->
-                <div class="tranAuthor">
-                    Author to be Displayed Here
-                </div>
-
-            </div>
-        </div>
+        
         <!-- Linking Your JavaScript File -->
         <script src="./assests/script.js"></script>
-        <script src="./assests/google-translate.js"></script>
+        <!-- <script src="./assests/google-translate.js"></script> -->
         <!--Add Google-translate link-->
-        <script type="text/javascript"
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-            </script>
+        <!-- <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=hello">
+            </script> -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=hello">
+    </script>
     </header>
+
 </body>
 
 </html>
