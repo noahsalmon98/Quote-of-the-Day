@@ -26,7 +26,7 @@ https://github.com/noahsalmon98/project-1
 ## Notes
 
 ### Technology Used
-For this project we used a Random Famous Quote Generator API by  , as well as a Google Translate API by .
+For this project we used a Random Famous Quote Generator API by Andres Olvera, as well as a Google Translate API by Google Cloud.
 
 ### Challenges
 We experienced a handful of challenges during the course of working on this project. These were the biggest:
